@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1"> 
+  <title>Site Refugiada - Endereço</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+<header>
+  <nav>
+    
+    <div class="logo">
+      <a href="#"><img src="imagens/Logo-horizontal.png" alt="ONG da Carmen Logo"></a>
+    </div>
+      
+    <div class="suporte-idioma">
+      <div class="suporte">
+        <img src="imagens/Suporte.png" alt="Help"> Suporte
+      </div>
+      <div class="menu-idioma">
+        <div class="idioma">
+           <img src="imagens/Idioma.png" alt="Language"> Idioma
+        </div>
+         
+         <ul>
+           <li>
+            <!-- Português -->
+              <a href="#" class="br">Português</a>
+           </li>
+           <li>
+            <!-- Inglês -->
+              <a href="#" class="us">English</a>
+           </li>
+           <li>
+            <!-- Espanhol -->
+              <a href="#" class="es">Español</a>
+           </li>
+           <li>
+            <!-- Francês -->
+              <a href="#" class="fr">Français</a>
+           </li>
+           <li>
+            <!-- Alemão -->
+              <a href="#" class="de">Deutsch</a>
+           </li>
+           <li>
+            <!-- Ucraniano -->
+              <a href="#" class="ua">украї́нська мо́ва</a>
+           </li>
+           <li>
+            <!-- Russo -->
+              <a href="#" class="ru">русский язык</a>
+          </li>
+        </ul>
+          
+      </div>
+    </div>
+    
+  </nav>
+</header>
+  
+<br>
+
+<div class="parent">
+  <div class="div1">
+    <ul>
+      <li>
+        <!-- Informações -->
+          <input type="checkbox" disabled checked="checked">
+          <label for="informações">Informações</label>
+      </li>
+      <li>
+        <!-- Mais informações -->
+          <input type="checkbox" disabled checked="checked">
+          <label for="mais informações">Mais Informações</label>
+      </li>
+      <li>
+        <!-- Endereço -->
+          <input type="checkbox" disabled>
+          <label for="endereço">Endereço</label>
+      </li>
+      <li>
+        <!-- Contato -->
+          <input type="checkbox" disabled>
+          <label for="contato">Contato</label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="div2">
+  <div class="header">
+    <h1>Quase lá, só mais algumas informações</h1>
+  </div>
+
+  <form id="form" class="form">
+    <div class="form-control">
+      <label for="pais">* País/Região:</label>
+      <input type="text" id="pais">
+      <small>Este campo é obrigatório</small>
+    </div>
+    
+    <div class="form-control">
+      <label for="cep">* CEP:</label>
+      <input type="text" id="cep">
+      <small>Este campo é obrigatório</small>
+    </div>
+
+    <div class="form-control">
+      <label for="estado">* Estado:</label>
+      <input type="text" id="estado">
+      <small>Este campo é obrigatório</small>
+    </div>
+    
+    <div class="form-control">
+      <label for="cidade">* Cidade:</label>
+      <input type="text" id="cidade">
+      <small>Este campo é obrigatório</small>
+    </div>
+
+    <div class="form-control">
+      <label for="bairro">* Bairro:</label>
+      <input type="text" id="bairro">
+      <small>Este campo é obrigatório</small>
+    </div>
+
+    <div class="form-control">
+      <label for="logradouro">* Logradouro:</label>
+      <input type="text" id="logradouro">
+      <small>Este campo é obrigatório</small>
+    </div>
+    
+    <div class="form-control">
+      <label for="numero">* Número:</label>
+      <input type="text" id="numero">
+      <small>Este campo é obrigatório</small>
+    </div>
+
+    <div class="form-control">
+      Os campos marcados com (*) são obrigatórios
+    </div>
+    <div class="form-control">
+      <button onclick="checar()">Próximo ></button>
+    </div>
+  </form>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
