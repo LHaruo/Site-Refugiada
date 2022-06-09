@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  background-color: #1A162D;
+  color: #FFFFFF;
+  padding: 10px 50px 10px 50px;
+}
+
+.logo img {
+    height: auto; 
+    width: auto; 
+    max-width: 300px;
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-idioma {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.suporte {
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  float: left;
+}
+
+.idioma {
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.menu-idioma ul {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 33px;
+  right: 0px;
+}
+
+.menu-idioma:hover ul {
+  display: block;
+}
+
+.menu-idioma ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #1A162D;
+}
+
+.menu-idioma ul li a {
+  width: 200px;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu-idioma ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-image: url;
+}
+
+.menu-idioma ul li a:hover {
+  background-color: #FCDF51
+}
+
+.br:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/br.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.us:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/us.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.es:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/es.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.fr:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/fr.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.de:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/de.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.ua:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/ua.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.ru:before {
+  background-image: url(https://flagicons.lipis.dev/flags/4x3/ru.svg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+/* CSS GRID */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 6 / 6;
+}
+
+/* PROGRESSO */
+.div1 ul {
+  list-style: none;
+  margin: 10px 10px 10px 50px;
+  padding: 10px 10px 10px 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #C3C3C3;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  line-height: 300%;
+}
+
+/* FORMULÁRIO */
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative; 
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #103B65
+}
+
+.form-control input {
+  border: 2px solid #808080;
+  display: block;
+  font-size: 14px;
+  min-width: 400px;
+  padding: 10px;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #103B65;
+  color: #FFFFFF;
+  padding: 10px;
+  border: 1px;
+  right: 0px;
+}
+
+.form-control.ok input {
+  border-color: #0071CE;
+  box-shadow: 0px 1px 10px rgba(16, 59, 101, 0.5);
+}
+
+.form-control.error input {
+  border-color: #BF1932;
+  box-shadow: 0px 1px 10px rgba(191, 25, 50, 0.5);
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #BF1932;
+}
